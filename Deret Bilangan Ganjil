@@ -1,0 +1,10 @@
+Judul : Algoritma Deret bilangan Ganjil
+Deklarasi : 
+X = int
+Deskripsi : 
+Read (X) 
+FOR ( x = 1; x<=9; x++) {
+	IF ( x %2 ! = 0)
+		Write x
+	}
+	END
