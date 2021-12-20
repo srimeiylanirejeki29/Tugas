@@ -1,0 +1,39 @@
+Deklarasi : 
+n,i : int
+Deskripsi : 
+read (n)
+write ('Anak ayam turun', n) {mencetak judul lagu}
+FOR i ← n downto 2 do {melakukan pengulangan menurun dari i sebanyak n hingga 2}
+      write ('Anak ayam turun',i,' mati satu tinggal',i-1)
+{baris terakhir}
+write('Anak Ayam Turun 1 mati satu tinggal induknya')
+END FOR
+Penjelasannya :
+i=ayam.nextInt(); Nilai yang diinputkan akan tersimpan sementara pada variabel i 
+while(i>2) sebuah kondisi jika nilai i lebih besar dari  2 maka akan masuk pada proses increment i-- (pengurangan) secara berulang sampai menemukan nilai i>2 (nilai i lebih dari 2)
+
+
+Codingannya:
+import java.util.Scanner;
+
+public class ANAKAYAM {
+	public static void main(String[] args) {
+		String lagi = "Y";
+		while(lagi.equals("Y"))
+		{
+			Scanner ayam = new Scanner(System.in);
+			int i;
+			System.out.print("Anak ayam turun = ");
+			i=ayam.nextInt();
+
+			while(i>1){
+				System.out.println("Anak ayam turun "  + i +  " mati satu tinggal " + (i-1));
+				i--;
+			}
+
+			System.out.println("Anak ayam turun 1 mati satu tinggal induknya");
+			Scanner x = new Scanner(System.in);
+			lagi = x.nextLine().toUpperCase();
+		}
+	}
+}
